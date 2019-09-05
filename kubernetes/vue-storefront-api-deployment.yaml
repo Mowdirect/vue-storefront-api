@@ -27,10 +27,6 @@ spec:
           name: code
           subPath: migrations
           readOnly: true
-        - mountPath: /var/www/package.json
-          name: code
-          subPath: package.json
-          readOnly: true
         - mountPath: /var/www/scripts
           name: code
           subPath: scripts
@@ -47,8 +43,8 @@ spec:
           name: dist
       volumes:
       - name: code
-        hostPath:
-          path: "/root/vue-storefront-api"
+        persistentVolumeClaim:
+          claimName: vue-storefront-volume-claim
       - name: dist
         emptyDir:
           medium: Memory
