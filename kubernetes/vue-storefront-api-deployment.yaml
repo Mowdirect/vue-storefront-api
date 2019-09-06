@@ -20,31 +20,14 @@ spec:
         ports:
         - containerPort: 8080
         volumeMounts:
-        - mountPath: /var/www/config
-          name: code
-          subPath: config
-        - mountPath: /var/www/migrations
-          name: code
-          subPath: migrations
-          readOnly: true
-        - mountPath: /var/www/scripts
-          name: code
-          subPath: scripts
-          readOnly: true
-        - mountPath: /var/www/src
-          name: code
-          subPath: src
-          readOnly: true
         - mountPath: /var/www/var
           name: code
-          subPath: var
-          readOnly: true
         - mountPath: /var/www/dist
           name: dist
       volumes:
       - name: code
-        persistentVolumeClaim:
-          claimName: vue-storefront-volume-claim
+        emptyDir:
+          medium: Memory
       - name: dist
         emptyDir:
           medium: Memory
