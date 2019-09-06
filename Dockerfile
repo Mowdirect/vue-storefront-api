@@ -1,8 +1,9 @@
 FROM divante/vue-storefront-api:latest
 
-RUN apk update
-RUN apk add git
-RUN apk imagemagick
+RUN apk update && \
+    apk add git && \
+    apk add imagemagick && \
+    rm -rf /var/cache/apk/*
 
 COPY config /var/www/config
 COPY migrations /var/www/migrations
