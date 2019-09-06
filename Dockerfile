@@ -1,4 +1,4 @@
-FROM divante/vue-storefront-apilatest
+FROM divante/vue-storefront-api:latest
 
 RUN apk update
 RUN apk add git
