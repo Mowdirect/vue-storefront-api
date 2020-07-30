@@ -6,11 +6,14 @@ npm-debug.log
 .idea/
 api_start.sh
 api_test.sh
+config/local.json
 package-lock.json
 src/config.json
-config/local.json
+config/certs/*.pem
 var/magento2-sample-data/
 .migrate
 *.iml
 /docker/elasticsearch/data/
 !/docker/elasticsearch/data/.gitkeep
+/docker/elasticsearch7/data/
+!/docker/elasticsearch7/data/.gitkeep
