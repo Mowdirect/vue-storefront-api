@@ -3,7 +3,7 @@
     "required": ["customer"],
     "properties": {
         "customer": {
-            "additionalProperties": false,
+            "additionalProperties": true,
             "required": [
                 "email",
                 "firstname",
