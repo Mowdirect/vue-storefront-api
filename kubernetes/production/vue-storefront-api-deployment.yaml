@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: vue-storefront-api
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: vue-storefront-api
@@ -11,9 +12,10 @@ spec:
       labels:
         app: vue-storefront-api
     spec:
+      restartPolicy: Always
       containers:
       - name: vue-storefront-api
-        image: docker.pkg.github.com/it-jonction/vue-storefront-api/vue-storefront-api:0.0.1
+        image: docker.pkg.github.com/it-jonction/vue-storefront-api/vue-storefront-api:0.0.4
         envFrom:
         - configMapRef:
             name: vue-storefront-api-config
@@ -31,3 +33,5 @@ spec:
       - name: dist
         emptyDir:
           medium: Memory
+      imagePullSecrets:
+        - name: regcred

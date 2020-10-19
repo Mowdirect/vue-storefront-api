@@ -21,6 +21,7 @@ RUN apk update && \
     rm -rf /var/cache/apk/*
 
 COPY config /var/www/config
+COPY docker/production/config/local.json /var/www/config/local.json
 COPY migrations /var/www/migrations
 COPY scripts /var/www/scripts
 COPY src /var/www/src
