@@ -7,7 +7,7 @@
        "size": {"type": "integer"},
        "size_options": {"type": "integer"},
        "price": {"type": "float"},
-       "has_options": {"type": "keyword"},            
+       "has_options": {"type": "keyword"},
        "special_price": {"type": "float"},
        "color": {"type": "integer"},
        "color_options": {"type": "integer"},
@@ -16,24 +16,24 @@
        "status": {"type": "integer"},
        "weight": {"type": "integer"},
        "visibility": {"type": "integer"},
-       "created_at": { 
-           "type": "date",           
+       "created_at": {
+           "type": "date",
            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
         },
-       "updated_at": { 
-           "type": "date",           
+       "updated_at": {
+           "type": "date",
            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
         },
        "special_from_date": {
-           "type": "date",           
+           "type": "date",
            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
         },
        "special_to_date": {
-           "type": "date",           
+           "type": "date",
            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
         },
        "news_from_date": {
-           "type": "date",           
+           "type": "date",
            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis"
         },
        "news_to_date": {
@@ -56,15 +56,15 @@
                "attribute_id": {"type": "long"},
                "default_label": {"type": "text"},
                "label": {"type": "text"},
-               "frontend_label": {"type": "text"},   
+               "frontend_label": {"type": "text"},
                "store_label": {"type": "text"},
                "values": {
                    "properties": {
                        "default_label": {"type": "text"},
                        "label": {"type": "text"},
-                       "frontend_label": {"type": "text"},                           
+                       "frontend_label": {"type": "text"},
                        "store_label": {"type": "text"},
-                       "value_index":  {"type": "keyword"}                          
+                       "value_index":  {"type": "keyword"}
                     }
                 }
             }
@@ -91,7 +91,8 @@
                 "options": {
                     "properties": {
                         "value": {"type": "text"},
-                        "label": {"type": "text"}
+                        "label": {"type": "text"},
+                        "sort_order": {"type": "integer"}
                     }
                 }
             }
