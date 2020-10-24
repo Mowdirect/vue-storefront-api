@@ -14,7 +14,8 @@
       "vue_storefront_catalog_de",
       "vue_storefront_catalog_it",
       "vue_storefront_catalog_capitools"
-    ],
+    ]
+  },
   "redis": {
     "host": "10.245.176.214",
     "port": "6379",
@@ -93,7 +94,9 @@
         "user": "vuestorefront",
         "pass": "vuestorefront.io"
       },
-      "targetAddressWhitelist": ["info@capitools.co.uk"],
+      "targetAddressWhitelist": [
+        "info@capitools.co.uk"
+      ],
       "secretString": "mMo026i8QgR"
     }
   },
@@ -111,8 +114,8 @@
   "imageable": {
     "maxListeners": 512,
     "imageSizeLimit": 1024,
-    "whitelist":{
-      "allowedHosts":[
+    "whitelist": {
+      "allowedHosts": [
         "*.capitools.co.uk"
       ]
     }
