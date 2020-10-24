@@ -160,6 +160,7 @@
       "type": "integer"
     },
     "attributes_metadata": {
+      "type": "nested",
       "properties": {
         "id": {
           "type": "integer"
