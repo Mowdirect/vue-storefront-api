@@ -43,7 +43,7 @@
       "url": "/",
       "elasticsearch": {
         "host": "10.114.0.11",
-        "index": "vue_storefront_catalog_capitools"
+        "index": "vue_storefront_catalog"
       },
       "msi": {
         "stockId": 2
@@ -116,7 +116,7 @@
     "imageSizeLimit": 1024,
     "whitelist": {
       "allowedHosts": [
-        "*.capitools.co.uk"
+        ".*"
       ]
     }
   }
