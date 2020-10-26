@@ -1,0 +1,123 @@
+{
+  "server": {
+    "invalidateCacheForwardUrl": "http://prod.capitools.co.uk/invalidate?key=aeSu7aip&tag="
+  },
+  "elasticsearch": {
+    "host": "10.114.0.11",
+    "index": "vue_storefront_catalog",
+    "port": 9200,
+    "protocol": "http",
+    "requestTimeout": 5000,
+    "min_score": 0.01,
+    "indices": [
+      "vue_storefront_catalog",
+      "vue_storefront_catalog_de",
+      "vue_storefront_catalog_it",
+      "vue_storefront_catalog_capitools"
+    ]
+  },
+  "redis": {
+    "host": "10.245.176.214",
+    "port": "6379",
+    "db": 0,
+    "auth": false
+  },
+  "availableStores": [
+    "de",
+    "it",
+    "capitools"
+  ],
+  "storeViews": {
+    "multistore": false,
+    "mapStoreUrlsFor": [
+      "de",
+      "it",
+      "capitools"
+    ],
+    "capitools": {
+      "storeCode": "capitools_storeview",
+      "disabled": false,
+      "storeId": 11,
+      "websiteId": 8,
+      "name": "Capitools",
+      "url": "/",
+      "elasticsearch": {
+        "host": "10.114.0.11",
+        "index": "vue_storefront_catalog"
+      },
+      "msi": {
+        "stockId": 2
+      },
+      "tax": {
+        "defaultCountry": "UK",
+        "defaultRegion": "",
+        "deprecatedPriceFieldsSupport": false,
+        "calculateServerSide": true,
+        "sourcePriceIncludesTax": false,
+        "finalPriceIncludesTax": true,
+        "userGroupId": null,
+        "useOnlyDefaultUserGroupId": false
+      },
+      "i18n": {
+        "fullCountryName": "United Kindom",
+        "fullLanguageName": "English",
+        "defaultLanguage": "EN",
+        "defaultCountry": "UK",
+        "defaultLocale": "en-UK",
+        "currencyCode": "GBP",
+        "currencySign": "GBP",
+        "dateFormat": "HH:mm D-M-YYYY"
+      }
+    }
+  },
+  "authHashSecret": "oMB30P29Mcg",
+  "objHashSecret": "ttP4p2oLIUG",
+  "bodyLimit": "1000kb",
+  "platform": "magento1",
+  "extensions": {
+    "stripe": {
+      "apiKey": "pk_test_7eOFEUEwXbFTxXitYz7Q8s4J00sWRxGzUA",
+      "backendPlatform": "magento1",
+      "paymentMethodCode": "stripe_payments"
+    },
+    "mailchimp": {
+      "listId": "5ef49f3ad0",
+      "apiKey": "7454b451dab6ce33ebc5f2cd1aaed237-us2",
+      "apiUrl": "https://us2.api.mailchimp.com/3.0",
+      "userStatus": "subscribed"
+    },
+    "mailService": {
+      "transport": {
+        "host": "smtp.gmail.com",
+        "port": 465,
+        "secure": true,
+        "user": "vuestorefront",
+        "pass": "vuestorefront.io"
+      },
+      "targetAddressWhitelist": [
+        "info@capitools.co.uk"
+      ],
+      "secretString": "mMo026i8QgR"
+    }
+  },
+  "magento1": {
+    "url": "https://dockertest.mowdirect.co.uk/",
+    "imgUrl": "https://dockertest.mowdirect.co.uk/media/catalog/product",
+    "magentoUserName": "superbotics1",
+    "magentoUserPassword": "superbotics1",
+    "httpUserName": "",
+    "httpUserPassword": "",
+    "api": {
+      "url": "https://dockertest.mowdirect.co.uk/vsbridge"
+    }
+  },
+  "imageable": {
+    "maxListeners": 512,
+    "imageSizeLimit": 1024,
+    "whitelist": {
+      "allowedHosts": [
+        ".*"
+      ]
+    }
+  }
+}

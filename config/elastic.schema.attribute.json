@@ -10,6 +10,12 @@
             "properties": {
                 "value": {
                     "type": "text"
+                },
+                "label": {
+                    "type": "text"
+                },
+                "sort_order": {
+                    "type": "integer"
                 }
             }
         }
