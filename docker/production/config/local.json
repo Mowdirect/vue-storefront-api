@@ -101,14 +101,14 @@
     }
   },
   "magento1": {
-    "url": "https://dockertest.mowdirect.co.uk/",
-    "imgUrl": "https://dockertest.mowdirect.co.uk/media/catalog/product",
+    "url": "https://www.capitools.co.uk/",
+    "imgUrl": "https://www.capitools.co.uk/media/catalog/product",
     "magentoUserName": "superbotics1",
-    "magentoUserPassword": "superbotics1",
+    "magentoUserPassword": "1JWJS1N2ZmF1JWJS1N2ZmF",
     "httpUserName": "",
     "httpUserPassword": "",
     "api": {
-      "url": "https://dockertest.mowdirect.co.uk/vsbridge"
+      "url": "https://prod.capitools.co.uk//vsbridge"
     }
   },
   "imageable": {
