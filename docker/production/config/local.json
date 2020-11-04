@@ -1,19 +1,17 @@
 {
   "server": {
+
     "invalidateCacheForwardUrl": "http://prod.capitools.co.uk/invalidate?key=aeSu7aip&tag="
   },
   "elasticsearch": {
     "host": "10.114.0.11",
-    "index": "vue_storefront_catalog",
+    "index": "vue_storefront_catalog_11",
     "port": 9200,
     "protocol": "http",
     "requestTimeout": 5000,
     "min_score": 0.01,
     "indices": [
-      "vue_storefront_catalog",
-      "vue_storefront_catalog_de",
-      "vue_storefront_catalog_it",
-      "vue_storefront_catalog_capitools"
+      "vue_storefront_catalog_11"
     ]
   },
   "redis": {
@@ -43,7 +41,7 @@
       "url": "/",
       "elasticsearch": {
         "host": "10.114.0.11",
-        "index": "vue_storefront_catalog"
+        "index": "vue_storefront_catalog_11"
       },
       "msi": {
         "stockId": 2
@@ -101,14 +99,14 @@
     }
   },
   "magento1": {
-    "url": "https://dockertest.mowdirect.co.uk/",
-    "imgUrl": "https://dockertest.mowdirect.co.uk/media/catalog/product",
-    "magentoUserName": "superbotics1",
-    "magentoUserPassword": "superbotics1",
+    "url": "https://www.capitools.co.uk/",
+    "imgUrl": "https://www.capitools.co.uk/media/catalog/product",
+    "magentoUserName": "vsf_service_account",
+    "magentoUserPassword": "ZXWnpZdB21ymypuVy",
     "httpUserName": "",
     "httpUserPassword": "",
     "api": {
-      "url": "https://dockertest.mowdirect.co.uk/vsbridge"
+      "url": "https://www.capitools.co.uk//vsbridge"
     }
   },
   "imageable": {
